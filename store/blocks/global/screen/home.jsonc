@@ -1,6 +1,7 @@
 {
   "store.home": { 
     "blocks": [
+      "department-search",
       "whatsapp-button",
       "list-context.bullets-group",
       "shelf#home"

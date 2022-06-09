@@ -49,7 +49,8 @@
     "vuitg.whatsapp-button": "0.x",
     "vuitg.bullets-diagramation": "0.x",
     "vuitg.add-to-cart-info": "0.x",
-    "vtex.modal-layout": "0.x"
+    "vtex.modal-layout": "0.x",
+    "vuitg.custom-department-search": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
