@@ -2,8 +2,8 @@
   "store.home": { 
     "blocks": [
       "whatsapp-button",
-      "list-context.bullets-group"
-      // "rich-text#home__vuitg-title"
+      "list-context.bullets-group",
+      "shelf#home"
     ]
   },
   "whatsapp-button":{
@@ -69,13 +69,54 @@
       },
       "infinite": true
     }
+  },
+  "shelf#home": {
+    "blocks": ["product-summary.shelf#custom"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Más vendidos"
+      }
+    }
+  },
+  "product-summary.shelf#custom":{
+    "children":[
+      "product-summary-add-to-list-button",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-identifier.summary",
+      "add-to-cart-button",
+      "modal-trigger#add-to-cart-info"
+    ]
+  },
+  "modal-trigger#add-to-cart-info":{
+    "children":[
+      "modal-layout#add-to-cart-info"
+    ], 
+    "props":{
+      "customPixelEventName": "addToCart"
+    }
+  },
+  "modal-layout#add-to-cart-info":{
+    "children":[
+      "modal-header#add-to-cart-info",
+      "add-to-cart-info"
+    ]
+  },
+  "modal-header#add-to-cart-info":{
+    "props":{
+      "showCloseButton": true,
+      "iconCloseSize": 24
+    }
   }
-  // "rich-text#home__vuitg-title": { 
-  //   "props": { 
-  //     "text": "VTEX University IT Globers",
-  //     "textAlignment": "CENTER",
-  //     "textPosition": "CENTER",
-  //     "font": "t-heading-1"
-  //   }
-  // }
+
+  
 }
