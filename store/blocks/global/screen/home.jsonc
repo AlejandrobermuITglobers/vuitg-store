@@ -1,7 +1,8 @@
 {
   "store.home": { 
     "blocks": [
-      "whatsapp-button"
+      "whatsapp-button",
+      "list-context.bullets-group"
       // "rich-text#home__vuitg-title"
     ]
   },
@@ -9,6 +10,64 @@
     "props":{
       "phone": "3057066856",
       "logo": "assets/img/WhatsApp.png"
+    }
+  },
+  "list-context.bullets-group":{
+    "title":"mi contexto de lista de Bullets",
+    "children":["slider-layout#bullet-group"],
+    "props":{
+      "bullets":[
+        {
+          "image": "assets/img/WhatsApp.png",
+          "titleBullet": "computadores 1",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image": "assets/img/WhatsApp.png",
+          "titleBullet": "computadores 2",
+          "link":{
+            "url":"/"
+          }
+        }, {
+          "image": "assets/img/WhatsApp.png",
+          "titleBullet": "computadores 3",
+          "link":{
+            "url":"/"
+          }
+        }, {
+          "image": "assets/img/WhatsApp.png",
+          "titleBullet": "computadores 4",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image": "assets/img/WhatsApp.png",
+          "titleBullet": "computadores 5",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image": "assets/img/WhatsApp.png",
+          "titleBullet": "computadores 6",
+          "link":{
+            "url":"/"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#bullet-group":{
+    "props":{
+      "itemsPerPage":{
+        "desktop": 5,
+        "tablet": 5,
+        "phone": 5
+      },
+      "infinite": true
     }
   }
   // "rich-text#home__vuitg-title": { 
